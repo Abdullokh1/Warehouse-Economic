@@ -1,0 +1,135 @@
+.hero__main{
+    background-color: #fafafb;
+    padding: 50px 0;
+}
+
+.carousel__title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 50px;
+}
+.carousel__price{
+    font-size: 2rem;
+    font-weight: 900;
+    span{
+        position: relative;
+        top: -8px;
+        left: 8px;
+        font-size: 20px;
+    }
+}
+.carousel__text{
+    @include font-13
+
+}
+.carousel__shop-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    a{
+        @include decoration-none;
+        color: #fff;
+        background-color: #DA465B;
+        padding: 15px 5px;
+        border-radius: 23px;
+        width: 180px;
+        font-size: 12px;
+        font-weight: 700;
+        display: inline-block;    
+        &:hover{
+            background-color: $main-color;
+        }
+    }  
+}
+.price-color{
+    color: #DA465B;
+}
+.next-btn{
+    position: absolute;
+    top: 40%;
+    width: 60px;
+    height: 80px;
+    padding: 20px; 
+    background-color: rgba(122, 116, 116, 0.925);
+    font-weight: bold;
+}
+.carousel-item{
+    position: relative;
+    height: 100vh;
+    img{
+        transform: scale(1.1);
+    }
+}
+.carousel-desc{
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    .carousel__price{
+        span{
+            left: -2px;
+        }
+        .rom{
+            text-transform: uppercase;
+            left: -2px;
+            top: 0px;
+        }
+    }
+}
+
+.carousel-desc2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    margin: 0 auto;
+    width: 40%;
+    text-align: left;
+    .carousel__center{
+        text-align: center;
+    }
+    .carousel__title{
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .carousel__text{
+        width: 70%;
+    }
+    .rom{
+        text-transform: uppercase;
+        left: -2px;
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .carousel-desc{
+        display: none;
+    }
+    .carousel-desc2{
+        display: none;
+    }
+    .next-btn{
+        position: absolute;
+        top: 30%;
+        width: 20px;
+        height: 40px;
+        padding: 10px 5px; 
+        background-color: rgb(194, 191, 191);
+        font-weight: bold;
+    }
+    .carousel-item{
+        height: 100%;
+    }
+}
