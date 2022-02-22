@@ -1,25 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson</title>
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+</head>
 
-    <script src="js/main.js"></script>
-  </body>
+<body>
+  <section class="hero">
+    <div class="hero__main">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carousel">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-3_35382bde-054c-4c31-a610-76b28ce97330_2048x.jpg?v=1601621098"
+              class="d-block w-100" alt="...">
+            <div class="carousel-desc">
+              <h2 class="carousel__price price-color animate__animated  animate__fadeInDown"
+                style="animation-duration: 1.5s;">F<span class="rom">rom</span>   <span>$</span>1900</h2>
+              <h2 class="carousel__title animate__animated animate__bounceInLeft" style="animation-duration: 1s;">Vinova
+                smartphone</h2>
+              <p class="carousel__text animate__animated animate__bounceInRight" style="animation-duration: 2s;">
+                Powerful creativity and productivity tools live inside every Mac — apps
+                that help you explore, connect, and work more efficiently.</p>
+              <div class="carousel__shop-btn animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">
+                <a class="carousel__link" href="#"><i class='bx bxs-shopping-bag' style='color:#ffffff'></i> SHOP
+                  NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-1_66ffbc40-efeb-48a4-95d8-590eba9597fd_2048x.jpg?v=1601620725"
+              class="d-block w-100" alt="slider1">
+            <div class="carousel-desc2">
+              <h2 class="carousel__price text-primary  animate__animated  animate__fadeInDown"
+                style="animation-duration: 1.5s;">F<span class="rom" >rom</span> <span>$</span> 1900</h2>
+              <h2 class="carousel__title  animate__animated animate__fadeInLeft" style="animation-duration: 1.5s;">Vinova
+                smartphone</h2>
+              <p class="carousel__text  animate__animated animate__fadeInRight" style="animation-duration: 1.5s;">
+                Pros love iMac. So we created one just for you. It's packed with the most powerful graphics and processors ever in a Mac, along with the  most advanced storage, memory.</p>
+              <div class="carousel__shop-btn animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">
+                <a class="carousel__link carousel__center" href="#"><i class='bx bxs-shopping-bag' style='color:#ffffff'></i> SHOP
+                  NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/slider-show-2_341dac96-3ed1-4ce8-8343-daa4c6d8b224_2048x.jpg?v=1601621068"
+              class="d-block w-100" alt="slider2">
+            <div class="carousel-desc">
+              <h2 class="carousel__price text-primary  animate__animated  animate__fadeInDown"
+                style="animation-duration: 1.5s;">F<span class="rom" >rom</span> <span>$</span>1900</h2>
+              <h2 class="carousel__title  animate__animated animate__bounceInDown" style="animation-duration: 1.5s;">
+                Macbook Air</h2>
+              <p class="carousel__text  animate__animated animate__bounceInRight" style="animation-duration: 1.5s;">
+                Powerful creativity and productivity tools live inside every Mac — apps
+                that help you explore, connect, and work more efficiently.</p>
+              <div class="carousel__shop-btn animate__animated animate__fadeInUp" style="animation-duration: 1.5s;">
+                <a class="carousel__link" href="#"><i class='bx bxs-shopping-bag' style='color:#ffffff'></i> SHOP
+                  NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="next-btn carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="next-btn next-btn2 carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="advert">
+    <div class="advert__main">
+      <div class="advert__device d-flex">
+        <div class="advert__one">
+          
+        </div>
+        <div class="advert__two">
+        
+        </div>
+        <div class="advert__three"> 
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="desc___advert">
+      <div class="container d-flex">
+        <div class="desc__list">
+          <img src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-1_a56ec713-e9bd-41de-836b-b607e3932442_100x.png?v=1601622033" alt="" width="25" height="25">
+          <h4>WORLDWIDE DELIVERY</h4>
+          <p>We work with the biggest delivery networks. It doesn't matter where in the world you are.</p>
+        </div>
+        <div class="desc__list">
+         <img src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-2_086176f5-82d8-4fd9-b016-d82a35137557_100x.png?v=1601622053" alt="car" width="32" height="32">
+          <h4>FREE SHIPPING</h4>
+          <p>Stop wondering about shipping costs, what you see is what you pay.</p>
+        </div>
+        <div class="desc__list">
+        <img src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/policy-3_34039ac5-4426-4826-a810-38f2c72e41e3_100x.png?v=1601622066" alt="wallet" width="25" height="25">
+          <h4>MONEY BACK GUARANTEE</h4>
+          <p>Got a problem with the product? Don't worry, we have a 30 day money back guarantee.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advert__cosection">
+    <div class="container-fluid p-0">
+      <div class="advert__phones">
+        <img src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-4_e80c3d89-2275-40ea-b402-004015fc128f_1920x1920.jpg?v=1601622721" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="container">
+      <div class="footer__main  col-lg-12">
+        <ul class="footer__list  col-sm-12 col-md-3">
+          <h3 class="footer__title">Customer service</h3>
+          <li class="footer__item">Contact us</li>
+          <li class="footer__item">Help and advice</li>
+          <li class="footer__item">Shipping & Returns</li>
+          <li class="footer__item">Terms and conditions</li>
+          <li class="footer__item">Refund Policy</li>
+        </ul>
+        <ul class="footer__list col-sm-12 col-md-3">
+          <h3 class="footer__title">INFORMATION</h3>
+          <li class="footer__item">About us</li>
+          <li class="footer__item">Testimonials</li>
+          <li class="footer__item">My Account</li>
+          <li class="footer__item">Payments & Returns</li>
+          <li class="footer__item">View Catalogues Online</li>
+        </ul>
+        <ul class="footer__list col-sm-12 col-md-3">
+          <h3 class="footer__title">ABOUT US</h3>
+          <li class="footer__item">Who We Are ?</li>
+          <li class="footer__item">Corporate Responsibility</li>
+          <li class="footer__item">California Laws</li>
+          <li class="footer__item">Careers</li>
+          <li class="footer__item">Privacy Policy</li>
+        </ul>
+        <ul class="footer__list">
+          <h3 class="footer__title">Contact us</h3>
+          <li class="footer__item"><i class='bx bx-phone-call'></i>(+612) 2531 5600</li>
+          <li class="footer__item"><i class='bx bx-mail-send' ></i>vinova@gmail.com</li>
+          <li class="footer__item"><i class='bx bx-map'></i>PO Box 1622 Visaosang Street West</li>
+          <li class="footer__item"><i class='bx bx-time-five'></i>Opening Hours : 8.00AM - 21.00AM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright col-12">
+      <p class="footer__text">Copyright © 2020 Vinovathemes. All rights reserved.</p>
+      <div class="">
+        <img src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/payment-footer_3cd5e244-331d-4433-ac29-eb0f0c257a18_300x.png?v=1601623316" alt="sss">
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
