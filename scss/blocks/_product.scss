@@ -1,3 +1,5 @@
+//   < !-- jamoliddin started product-section -->
+
 .product__box {
     width: 1230px;
     padding: 0 25px;
@@ -57,7 +59,7 @@
 }
 
 .product__btn-group {
-    margin: 45px 0 36px;
+    margin: 35px 0 36px;
 }
 
 .active {
@@ -68,7 +70,6 @@
 
 // jamoliddin finished product inner and dstarted product content
 .product__content-box {
-    // border: solid 1px;
     height: 395px;
     padding: 7.5px;
     position: relative;
@@ -77,13 +78,33 @@
 .product__content-img {
     width: 100%;
     height: 100%;
-    background-color: #666;
+    background-color: #F6F6F6;
     background-image: url("https://cdn.shopify.com/s/files/1/0272/1493/8165/products/15_85ddb99d-27d8-4425-9640-ca6307daade2_425x425.jpg?v=1603253183");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 
+}
+
+.product__content-box:nth-child(2) .product__content-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/13_6c780880-f82a-4c2b-b246-38a52f575582_425x425.jpg?v=1603253080');
+}
+
+.product__content-box:nth-child(3) .product__content-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/11_5d731e89-ceba-4b43-9056-67afab96339a_425x425.jpg?v=1603252915');
+}
+
+.product__content-box:nth-child(4) .product__content-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/14_fc556a81-dc84-4b29-9069-875d9906f6ea_425x425.jpg?v=1603253113');
+}
+
+.product__content-box:nth-child(5) .product__content-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/12_c47e2a56-1b49-4937-b54d-8c1b8cb97e0d_425x425.jpg?v=1603252966');
+}
+
+.product__content-box:nth-child(6) .product__content-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/10_a71a1e2a-7f88-40a3-a58e-14317a53a54a_425x425.jpg?v=1603252831');
 }
 
 .product__content-show {
@@ -111,6 +132,26 @@
     background-repeat: no-repeat;
     bottom: -50px;
     transition: 0.5s;
+}
+
+.product__content-box:nth-child(2) .product__content-show-img-box {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/1_28abe42e-069c-4e6b-8d23-5cfb9bbb844d_425x425.jpg?v=1603253080');
+}
+
+.product__content-box:nth-child(3) .product__content-show-img-box {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/2_57ffcab4-4c78-4764-8607-207b52864731_425x425.jpg?v=1603252915');
+}
+
+.product__content-box:nth-child(4) .product__content-show-img-box {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/5_56514da7-84ba-45f6-9ee0-989448d194a1_425x425.jpg?v=1603253121');
+}
+
+.product__content-box:nth-child(5) .product__content-show-img-box {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/5_56514da7-84ba-45f6-9ee0-989448d194a1_425x425.jpg?v=1603253121');
+}
+
+.product__content-box:nth-child(6) .product__content-show-img-box {
+    background-image: url('https://cdn.shopify.com/s/files/1/0272/1493/8165/products/1_28abe42e-069c-4e6b-8d23-5cfb9bbb844d_425x425.jpg?v=1603253080');
 }
 
 .product__content-box:hover {
@@ -243,7 +284,7 @@
 }
 
 .product__heart {
-    transform: translateY(80px);
+    transform: translateY(50px);
     opacity: 1;
     transition: 0.5s all ease;
 }
@@ -251,7 +292,8 @@
 .product__search {
     transform: translateY(50px);
     opacity: 1;
-    transition: 0.8s all ease;
+    transition: all 0.3s ease 0.3s;
+
 }
 
 .product__content-box:hover {
@@ -322,43 +364,24 @@
     display: flex;
 }
 
+// jamoliddin started scroll
 ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-
-
-::-webkit-scrollbar-thumb {
-    background: #fff;
-    border: 0px none #ffffff;
-    border-radius: 0px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #105caa;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background: #105caa;
+    width: 3px;
 }
 
 ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
     background: #105caa;
-    border: 0px none #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
-::-webkit-scrollbar-track:hover {
-    background: #fff;
-}
+// jamolidddin finished scroll
 
-::-webkit-scrollbar-track:active {
-    background: #105caa;
-}
-
-::-webkit-scrollbar-corner {
-    background: #fff;
-}
 
 .product__modal-inner-title {
     font-weight: 700;
@@ -436,7 +459,6 @@
     @include font-13;
     font-weight: 400;
     letter-spacing: 0.1px;
-    margin-bottom: 50px;
 }
 
 .product__modal-add {
@@ -454,7 +476,7 @@
     font-weight: 700;
     text-transform: uppercase;
     font-family: $font-roboto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @include decoration-none;
     @include title-color;
 
@@ -487,11 +509,32 @@
 }
 
 .product__modal-buy {
-    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    padding: 12px 0;
     color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $font-roboto;
+    @include decoration-none;
+    @include title-color;
+    background-color: #222;
+    transition: 0.5s;
+
+    .product__modal-buy-text {
+        position: relative;
+        top: 6px;
+        color: #fff;
+    }
 
     &:hover {
-        border-color: #fff;
+        background-color: #105caa;
     }
 
 }
@@ -509,3 +552,156 @@
         transform: rotate(-180deg);
     }
 }
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.product__seclect {
+    position: relative;
+    top: 5px;
+    left: -5px;
+    font-size: 21px;
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .product__content-box {
+        height: 200px;
+    }
+
+    .product__wrapper {
+        height: 185px;
+    }
+
+    .product__content-show-img-box {
+        height: 185px;
+    }
+}
+
+@media screen and (min-width:450px) {
+    .product__inner {
+        width: 100%;
+    }
+
+    .product__btn-group {
+        width: 100%;
+        padding-bottom: 10px;
+        overflow-x: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px grey;
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #105caa;
+        border-radius: 2px;
+    }
+
+    .product__content-box {
+        height: 230px;
+    }
+
+    .product__wrapper {
+        height: 215px;
+    }
+
+    .product__content-show-img-box {
+        height: 215px;
+    }
+
+    .product__search {
+        display: none;
+    }
+
+    .product__content-box:nth-child(5),
+    .product__content-box:nth-child(6) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .product__inner {
+        width: 100%;
+    }
+
+    .product__btn-group {
+        width: 100%;
+        padding-bottom: 10px;
+        overflow-x: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px grey;
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #105caa;
+        border-radius: 2px;
+    }
+
+    .product__content-box {
+        height: 230px;
+    }
+
+    .product__wrapper {
+        height: 215px;
+    }
+
+    .product__content-show-img-box {
+        height: 215px;
+    }
+
+    .product__search {
+        display: none;
+    }
+
+    .product__content-box:nth-child(5),
+    .product__content-box:nth-child(6) {
+        display: none;
+    }
+
+    .product__content-box {
+        height: 148px;
+    }
+
+    .product__wrapper {
+        height: 134px;
+    }
+
+    .product__content-show-img-box {
+        height: 134px;
+    }
+
+    .product__content-add {
+        display: none;
+    }
+}
+
+.product__content-box:hover {
+    .product__content-show {
+        width: calc(100% + 15px);
+        height: calc(100% + 140px);
+
+    }
+}
+//   < !-- jamoliddin finished product-section -->
