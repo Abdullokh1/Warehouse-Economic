@@ -26,7 +26,7 @@
     @include font-13;
     color: #666;
     font-weight: 400;
-    margin: 5px auto 0;
+    margin: 5px auto 0 ;
     line-height: 20px;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .product__btn-group {
-    margin: 35px 0 36px;
+    margin: 30px 0 36px;
 }
 
 .active {
@@ -284,14 +284,14 @@
 }
 
 .product__heart {
-    transform: translateY(50px);
-    opacity: 1;
+    transform: translateY(40px);
+    opacity:    0;
     transition: 0.5s all ease;
 }
 
 .product__search {
-    transform: translateY(50px);
-    opacity: 1;
+    transform: translateY(40px);
+    opacity: 0;
     transition: all 0.3s ease 0.3s;
 
 }
@@ -299,10 +299,12 @@
 .product__content-box:hover {
     .product__heart {
         transform: translate(0);
+        opacity: 1;
     }
 
     .product__search {
         transform: translate(0);
+        opacity: 1;
     }
 }
 
@@ -454,11 +456,12 @@
 
 }
 
-.product__text {
+.product__text-modal {
     color: #666;
     @include font-13;
     font-weight: 400;
     letter-spacing: 0.1px;
+    margin-bottom: 40px;
 }
 
 .product__modal-add {
@@ -582,7 +585,7 @@
     }
 }
 
-@media screen and (min-width:450px) {
+@media screen and (max-width:620px) {
     .product__inner {
         width: 100%;
     }
@@ -627,6 +630,9 @@
 
     .product__content-box:nth-child(5),
     .product__content-box:nth-child(6) {
+        display: none;
+    }
+    .product__next-page-btns{
         display: none;
     }
 
@@ -695,7 +701,6 @@
     .product__content-add {
         display: none;
     }
-}
 
 .product__content-box:hover {
     .product__content-show {
@@ -703,5 +708,36 @@
         height: calc(100% + 140px);
 
     }
+}
+}
+
+.product__next-page-btns{
+    width: 100%;
+    margin: 40px 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product__bnts-list{
+    @include list-unstyled;
+    display: flex;
+    gap: 8px;
+
+}
+.product__next-pagebtn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product__next-pagebtn:hover{
+    background-color: #fd6666;
+
+}
+.next-active{
+    background-color: #fd6666;
 }
 //   < !-- jamoliddin finished product-section -->
